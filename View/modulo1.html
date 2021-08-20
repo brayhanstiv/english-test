@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Test English - Module One</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/uk.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<!--===============================================================================================-->
+
+
+
+<script>
+if(history.forward(1)){
+history.replace(history.forward(1));
+}
+
+function myFunction() {
+    return "Write something clever here...";
+}
+
+	
+function checkKeyCode(evt)
+{
+
+var evt = (evt) ? evt : ((event) ? event : null);
+var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+if(event.keyCode==116)
+{
+evt.keyCode=0;
+return false
+}
+}
+document.onkeydown=checkKeyCode;
+
+</script>
+
+<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+   var x = setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+            clearInterval(x);
+            document.getElementById("time").innerHTML = "00:00";
+            window.location="resultados.html";
+
+
+            
+
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes =1500 * 1,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+    
+};
+s
+ 
+
+
+
+
+</script>
+
+</head>
+<body onbeforeunload="return myFunction()">
+
+
+	<div class="limiter">
+
+		<div class="container-login100">
+			<div class="registroJS">
+				<center><img src="images/logo.png"></center>
+			 <h2 style="padding:20px; color: #dac89d;" align="center"> <b> FIRST MODULE</b></h2>
+
+			
+		  	
+			
+
+			<form id="form1" > 
+
+				
+
+				
+
+
+				 <div class="wrap-input100 validate-input" style="width: 85%; margin: auto;" data-validate = "Valid user name">
+				 	<center><h3 class="inputpregunta"> RESPONDA LAS PREGUNTAS 107 A 109 DE ACUERDO CON EL EJEMPLO</h3></center>
+				 	<center><img src="images/tipo3.png"></center>
+					
+					
+						
+				</div>
+				
+
+				<table class="tabla" style="margin: auto; width: 80%; table-layout: fixed;">
+
+						<tr>
+							<td>
+
+								<ol>
+									<li>
+										<ol>
+											
+										</ol>
+										<p>
+										I can’t eat a cold sandwich. It is horrible!</p> <br>
+										<input type="radio" name="firstquestion" value="si">I hope so<br>
+										<input type="radio" name="firstquestion" value="no">I agree<br>
+										<input type="radio" name="	" value="no"> I am not <br>
+										
+										
+									</li>
+									<li>								
+										<p>I am going on vacation to Vancouver!</p><br>
+										<input type="radio" name="secondquestion" value="no"> That's great<br>
+										<input type="radio" name="secondquestion" value="no"> I like swimming<br>
+										<input type="radio" name="secondquestion" value="si"> You are first<br>
+										
+									</li>
+
+									<li>								
+										<p>	It rained a lot last night!</p><br>
+									<input type="radio" name="thirdquestion" value="no"> Did you accept?<br>
+										<input type="radio" name="thirdquestion" value="si"> Did you understand?<br>
+										<input type="radio" name="thirdquestion" value="no"> Did you sleep?<br>
+										<br>
+									</li>
+									
+								</ol>
+							
+
+								
+							</td>
+
+							
+							
+						</tr>
+						
+					</table>
+
+
+				<center><div class="inputitulo">This module will end in <span id="time">25:00</span></div></center>
+
+			
+
+			<div class="container-login100-form-btn">
+						<button class="login100-form-btn" style="width: 50%">
+							<a href="resultados.html">SAVE</a>
+						</button>
+					</div> <br> 
+
+			</form>
+
+			</div>
+		</div>
+
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/time.js"></script>
+
+</body>
+</html>

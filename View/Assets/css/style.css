@@ -1,0 +1,48 @@
+
+input[type='submit'],input[type='reset'] {
+  background-color: #990033;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;padding: 10px;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+input[type='submit']:hover{
+  background-color: #8A0808;
+}
+
+input[type='reset']:hover{
+	background-color: #8A0808;
+}
+
+
+.tabla{
+	width: 90%;
+	margin: auto;
+}
+.tablaQ{
+	width: 100%;
+	margin: auto;
+}
+.cont{
+	background-color: #990033;
+	border: outset 5px;
+	height: 300px;
+	border-color: #990033 ;
+
+}
+
+h1{
+	text-align: center;
+}
+
+.formulario{
+
+	padding-left: 25%;
+	padding-right: 30%;
+}
+
